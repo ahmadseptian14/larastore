@@ -23,7 +23,7 @@ class CreateTransactionsTable extends Migration
             $table->string('shipping_status');
             $table->string('resi');
             $table->bigInteger('quantity_order');
-            $table->bigInteger('poin');
+            $table->bigInteger('poin')->nullable();
             $table->timestamps();
         });
     }
